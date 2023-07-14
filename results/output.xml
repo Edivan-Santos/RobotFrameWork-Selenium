@@ -1,32 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230713 20:38:19.004" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230714 09:05:41.638" rpa="false" schemaversion="4">
 <suite id="s1" name="RobotFrameWork-Selenium" source="C:\Users\mb_la\RobotFrameWork-Selenium">
 <suite id="s1-s1" name="Modelo" source="C:\Users\mb_la\RobotFrameWork-Selenium\modelo.robot">
-<test id="s1-s1-t1" name="Cenário 1: Acessando site do robot" line="14">
-<kw name="Abrir Site">
+<test id="s1-s1-t1" name="Cenário 1: Teste de abrir o site da google" line="18">
+<kw name="Abrir site da google">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://robotframework.org/</arg>
+<arg>https://www.google.com.br/</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230713 20:38:19.322" level="INFO">Opening browser 'Chrome' to base url 'https://robotframework.org/'.</msg>
-<status status="PASS" starttime="20230713 20:38:19.321" endtime="20230713 20:38:23.307"/>
+<msg timestamp="20230714 09:05:41.990" level="INFO">Opening browser 'Chrome' to base url 'https://www.google.com.br/'.</msg>
+<status status="PASS" starttime="20230714 09:05:41.988" endtime="20230714 09:05:45.836"/>
 </kw>
-<kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://robotframework.org/</arg>
-<arg>Edge</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230713 20:38:23.308" level="INFO">Opening browser 'Edge' to base url 'https://robotframework.org/'.</msg>
-<msg timestamp="20230713 20:38:23.316" level="INFO">Executing: C:\Users\mb_la\AppData\Local\Programs\Python\Python311\Lib\site-packages\selenium\webdriver\common\windows\selenium-manager.exe --browser edge --output json</msg>
-<status status="PASS" starttime="20230713 20:38:23.307" endtime="20230713 20:38:27.564"/>
+<status status="PASS" starttime="20230714 09:05:41.987" endtime="20230714 09:05:45.836"/>
 </kw>
-<status status="PASS" starttime="20230713 20:38:19.320" endtime="20230713 20:38:27.564"/>
-</kw>
-<status status="PASS" starttime="20230713 20:38:19.318" endtime="20230713 20:38:27.565"/>
+<status status="PASS" starttime="20230714 09:05:41.985" endtime="20230714 09:05:45.837"/>
 </test>
 <doc>teste automatizado com robot e selenium</doc>
-<status status="PASS" starttime="20230713 20:38:19.043" endtime="20230713 20:38:27.568"/>
+<status status="PASS" starttime="20230714 09:05:41.685" endtime="20230714 09:05:45.839"/>
 </suite>
-<status status="PASS" starttime="20230713 20:38:19.009" endtime="20230713 20:38:27.572"/>
+<status status="PASS" starttime="20230714 09:05:41.646" endtime="20230714 09:05:45.844"/>
 </suite>
 <statistics>
 <total>
