@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230716 20:54:55.462" rpa="false" schemaversion="4">
+<suite id="s1" name="RobotFrameWork-Selenium" source="C:\Users\mb_la\OneDrive\Área de Trabalho\RobotFrameWork-Selenium">
+<suite id="s1-s1" name="Robot" source="C:\Users\mb_la\OneDrive\Área de Trabalho\RobotFrameWork-Selenium\robot">
+<suite id="s1-s1-s1" name="TesteCases" source="C:\Users\mb_la\OneDrive\Área de Trabalho\RobotFrameWork-Selenium\robot\TesteCases">
+<suite id="s1-s1-s1-s1" name="Login" source="C:\Users\mb_la\OneDrive\Área de Trabalho\RobotFrameWork-Selenium\robot\TesteCases\login.robot">
+<test id="s1-s1-s1-s1-t1" name="Cenário 1: Teste de abrir o site da google" line="21">
+<kw name="CT01: Abrir IBK do inovanti">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://ibk.stg.bankeiro.inovanti.com.br/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230716 20:54:55.765" level="INFO">Opening browser 'Chrome' to base url 'https://ibk.stg.bankeiro.inovanti.com.br/'.</msg>
+<status status="PASS" starttime="20230716 20:54:55.764" endtime="20230716 20:54:58.560"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
+<arg>//*[@testid="login_AdvancedInput_username"]</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" starttime="20230716 20:54:58.561" endtime="20230716 20:54:58.601"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@testid="login_AdvancedInput_username"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230716 20:54:58.602" level="INFO">Clicking element '//*[@testid="login_AdvancedInput_username"]'.</msg>
+<status status="PASS" starttime="20230716 20:54:58.601" endtime="20230716 20:54:59.267"/>
+</kw>
+<status status="PASS" starttime="20230716 20:54:55.763" endtime="20230716 20:54:59.268"/>
+</kw>
+<status status="PASS" starttime="20230716 20:54:55.762" endtime="20230716 20:54:59.269"/>
+</test>
+<doc>teste automatizado com robot e selenium</doc>
+<status status="PASS" starttime="20230716 20:54:55.513" endtime="20230716 20:54:59.273"/>
+</suite>
+<status status="PASS" starttime="20230716 20:54:55.507" endtime="20230716 20:54:59.278"/>
+</suite>
+<status status="PASS" starttime="20230716 20:54:55.501" endtime="20230716 20:54:59.282"/>
+</suite>
+<status status="PASS" starttime="20230716 20:54:55.467" endtime="20230716 20:54:59.286"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RobotFrameWork-Selenium">RobotFrameWork-Selenium</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Robot">RobotFrameWork-Selenium.Robot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TesteCases">RobotFrameWork-Selenium.Robot.TesteCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Login">RobotFrameWork-Selenium.Robot.TesteCases.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
