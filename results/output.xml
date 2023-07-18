@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230716 21:38:40.038" rpa="false" schemaversion="4">
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230718 09:04:00.144" rpa="false" schemaversion="4">
 <suite id="s1" name="RobotFrameWork-Selenium" source="C:\Users\mb_la\OneDrive\Área de Trabalho\RobotFrameWork-Selenium">
 <suite id="s1-s1" name="Robot" source="C:\Users\mb_la\OneDrive\Área de Trabalho\RobotFrameWork-Selenium\robot">
 <suite id="s1-s1-s1" name="TesteCases" source="C:\Users\mb_la\OneDrive\Área de Trabalho\RobotFrameWork-Selenium\robot\TesteCases">
 <suite id="s1-s1-s1-s1" name="Login" source="C:\Users\mb_la\OneDrive\Área de Trabalho\RobotFrameWork-Selenium\robot\TesteCases\login.robot">
 <test id="s1-s1-s1-s1-t1" name="CT01: Abrir IBK do inovanti" line="17">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>https://ibk.stg.bankeiro.inovanti.com.br/</arg>
+<arg>https://ibk.beta.bankeiro.com/</arg>
 <arg>Chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20230716 21:38:40.366" level="INFO">Opening browser 'Chrome' to base url 'https://ibk.stg.bankeiro.inovanti.com.br/'.</msg>
-<status status="PASS" starttime="20230716 21:38:40.365" endtime="20230716 21:38:43.620"/>
+<msg timestamp="20230718 09:04:00.589" level="INFO">Opening browser 'Chrome' to base url 'https://ibk.beta.bankeiro.com/'.</msg>
+<status status="PASS" starttime="20230718 09:04:00.588" endtime="20230718 09:04:13.034"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${field_login}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230716 21:38:43.620" endtime="20230716 21:38:43.654"/>
+<status status="PASS" starttime="20230718 09:04:13.036" endtime="20230718 09:04:13.090"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field_login}</arg>
 <arg>${user_login}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230716 21:38:43.656" level="INFO">Typing text 'nori' into text field '//*[@testid="login_AdvancedInput_username"]'.</msg>
-<status status="PASS" starttime="20230716 21:38:43.655" endtime="20230716 21:38:43.812"/>
+<msg timestamp="20230718 09:04:13.091" level="INFO">Typing text 'brunoamorim' into text field '//*[@testid="login_AdvancedInput_username"]'.</msg>
+<status status="PASS" starttime="20230718 09:04:13.091" endtime="20230718 09:04:13.295"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${field_password}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230716 21:38:43.813" endtime="20230716 21:38:43.842"/>
+<status status="PASS" starttime="20230718 09:04:13.295" endtime="20230718 09:04:13.326"/>
 </kw>
 <kw name="Input Text" library="SeleniumLibrary">
 <arg>${field_password}</arg>
 <arg>${user_password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20230716 21:38:43.844" level="INFO">Typing text 'Pass123123' into text field '//*[@testid="login_AdvancedInput_password"]'.</msg>
-<status status="PASS" starttime="20230716 21:38:43.842" endtime="20230716 21:38:44.012"/>
+<msg timestamp="20230718 09:04:13.327" level="INFO">Typing text 'Pass123123' into text field '//*[@testid="login_AdvancedInput_password"]'.</msg>
+<status status="PASS" starttime="20230718 09:04:13.327" endtime="20230718 09:04:13.496"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${button}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20230716 21:38:44.013" endtime="20230716 21:38:44.040"/>
+<status status="PASS" starttime="20230718 09:04:13.496" endtime="20230718 09:04:13.522"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20230716 21:38:44.041" level="INFO">Clicking element '//*[@testid="login_Button_Submit"]'.</msg>
-<status status="PASS" starttime="20230716 21:38:44.040" endtime="20230716 21:38:44.117"/>
+<msg timestamp="20230718 09:04:13.523" level="INFO">Clicking element '//*[@testid="login_Button_Submit"]'.</msg>
+<status status="PASS" starttime="20230718 09:04:13.522" endtime="20230718 09:04:13.593"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>1 minutes</arg>
+<arg>45 seconds</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20230716 21:39:44.119" level="INFO">Slept 1 minute</msg>
-<status status="PASS" starttime="20230716 21:38:44.118" endtime="20230716 21:39:44.120"/>
+<msg timestamp="20230718 09:04:58.595" level="INFO">Slept 45 seconds</msg>
+<status status="PASS" starttime="20230718 09:04:13.594" endtime="20230718 09:04:58.595"/>
 </kw>
-<status status="PASS" starttime="20230716 21:38:40.363" endtime="20230716 21:39:44.124"/>
+<status status="PASS" starttime="20230718 09:04:00.585" endtime="20230718 09:04:58.596"/>
 </test>
 <doc>teste automatizado com robot e selenium</doc>
-<status status="PASS" starttime="20230716 21:38:40.092" endtime="20230716 21:39:44.134"/>
+<status status="PASS" starttime="20230718 09:04:00.224" endtime="20230718 09:04:58.598"/>
 </suite>
-<status status="PASS" starttime="20230716 21:38:40.085" endtime="20230716 21:39:44.142"/>
+<status status="PASS" starttime="20230718 09:04:00.217" endtime="20230718 09:04:58.603"/>
 </suite>
-<status status="PASS" starttime="20230716 21:38:40.079" endtime="20230716 21:39:44.149"/>
+<status status="PASS" starttime="20230718 09:04:00.208" endtime="20230718 09:04:58.606"/>
 </suite>
-<status status="PASS" starttime="20230716 21:38:40.042" endtime="20230716 21:39:44.155"/>
+<status status="PASS" starttime="20230718 09:04:00.152" endtime="20230718 09:04:58.609"/>
 </suite>
 <statistics>
 <total>
