@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1 (Python 3.11.4 on win32)" generated="20230718 10:12:50.067" rpa="false" schemaversion="4">
+<suite id="s1" name="RobotFrameWork-Selenium" source="C:\Users\mb_la\OneDrive\Área de Trabalho\RobotFrameWork-Selenium">
+<suite id="s1-s1" name="Robot" source="C:\Users\mb_la\OneDrive\Área de Trabalho\RobotFrameWork-Selenium\robot">
+<suite id="s1-s1-s1" name="TesteCases" source="C:\Users\mb_la\OneDrive\Área de Trabalho\RobotFrameWork-Selenium\robot\TesteCases">
+<suite id="s1-s1-s1-s1" name="Login" source="C:\Users\mb_la\OneDrive\Área de Trabalho\RobotFrameWork-Selenium\robot\TesteCases\login.robot">
+<test id="s1-s1-s1-s1-t1" name="CT01: Abrir IBK do inovanti" line="20">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://ibk.beta.bankeiro.com/</arg>
+<arg>Chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230718 10:12:50.431" level="INFO">Opening browser 'Chrome' to base url 'https://ibk.beta.bankeiro.com/'.</msg>
+<status status="PASS" starttime="20230718 10:12:50.429" endtime="20230718 10:12:57.352"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${field_login}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230718 10:12:57.353" endtime="20230718 10:12:57.388"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field_login}</arg>
+<arg>${user_login}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230718 10:12:57.389" level="INFO">Typing text 'brunoamorim' into text field '//*[@testid="login_AdvancedInput_username"]'.</msg>
+<status status="PASS" starttime="20230718 10:12:57.388" endtime="20230718 10:12:57.580"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${field_password}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230718 10:12:57.581" endtime="20230718 10:12:57.613"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${field_password}</arg>
+<arg>${user_password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230718 10:12:57.615" level="INFO">Typing text 'Pass123123' into text field '//*[@testid="login_AdvancedInput_password"]'.</msg>
+<status status="PASS" starttime="20230718 10:12:57.614" endtime="20230718 10:12:57.792"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${button}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230718 10:12:57.793" endtime="20230718 10:12:57.818"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230718 10:12:57.819" level="INFO">Clicking element '//*[@testid="login_Button_Submit"]'.</msg>
+<status status="PASS" starttime="20230718 10:12:57.819" endtime="20230718 10:12:58.041"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>45 seconds</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230718 10:13:43.042" level="INFO">Slept 45 seconds</msg>
+<status status="PASS" starttime="20230718 10:12:58.042" endtime="20230718 10:13:43.042"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>${fielde_verificacao}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20230718 10:13:43.043" endtime="20230718 10:13:43.069"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${fielde_verificacao}</arg>
+<arg>${codigo}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230718 10:13:43.071" level="INFO">Typing text '112233' into text field '//*[@testid="request-sms_SmsCode_code"]'.</msg>
+<status status="PASS" starttime="20230718 10:13:43.071" endtime="20230718 10:13:43.177"/>
+</kw>
+<status status="PASS" starttime="20230718 10:12:50.428" endtime="20230718 10:13:43.177"/>
+</test>
+<doc>teste automatizado com robot e selenium</doc>
+<status status="PASS" starttime="20230718 10:12:50.155" endtime="20230718 10:13:43.179"/>
+</suite>
+<status status="PASS" starttime="20230718 10:12:50.149" endtime="20230718 10:13:43.183"/>
+</suite>
+<status status="PASS" starttime="20230718 10:12:50.144" endtime="20230718 10:13:43.188"/>
+</suite>
+<status status="PASS" starttime="20230718 10:12:50.072" endtime="20230718 10:13:43.192"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="RobotFrameWork-Selenium">RobotFrameWork-Selenium</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Robot">RobotFrameWork-Selenium.Robot</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TesteCases">RobotFrameWork-Selenium.Robot.TesteCases</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Login">RobotFrameWork-Selenium.Robot.TesteCases.Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
