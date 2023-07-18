@@ -15,7 +15,7 @@ ${button}              //*[@testid="login_Button_Submit"]
 *** Test Cases ***
 
 CT01: Abrir IBK do inovanti
-    Open Browser     https://ibk.beta.bankeiro.com/ 	Chrome     
+    Open Browser         https://ibk.beta.bankeiro.com/        Chrome     
     
     Wait Until Element Is Visible     ${field_login}
     Input Text                        ${field_login}    ${user_login}
