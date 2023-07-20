@@ -18,10 +18,10 @@ ${codigo}                112233
 ${button_verif}            //*[@testid="request-sms_SmsCode_Submit"]
 
 
-${button_pix}                 //*[@testid="home_PIX_click"]
-${criar_chavePix}            //*[@testid="ic_create-key"]
+${button_pix}             //*[@testid="home_PIX_click"]
+  
 
-   
+  
 *** Test Cases ***
 
 CT01: Abrir IBK do Bankeiro-beta com sucesso!
@@ -53,14 +53,6 @@ CT01: Abrir IBK do Bankeiro-beta com sucesso!
     # Área pix
     Wait Until Element Is Visible        ${button_pix}
     Sleep     5 seconds
-    
     Click Element        ${button_pix}
-    Sleep     10 seconds
-    
-   
-
-    #cria chave pix
-   # Wait Until Element Is Visible        ${criar_chavePix}
-   # Click Element                        ${criar_chavePix}
-
+ 
     Sleep     25 seconds
